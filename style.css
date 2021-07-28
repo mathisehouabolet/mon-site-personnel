@@ -11,21 +11,26 @@
     width: 100vw;
     align-items: center;
     top: 0;
+    justify-content: flex-end;
+
 }
+
 
 .logo{
     width: 30px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 #navbar a{ 
 display: flex;
-margin-left: 50px;
+margin-left: 70px;
 justify-content: flex-end;
 }
 
 h1{
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Shrikhand', cursive;
     color: #00afff;
     margin-top: 60px;
 }
@@ -69,6 +74,7 @@ margin-top: 50px;
 h2{
 text-align: center;
 margin: 30px;
+font-family: 'Otomanopee One', sans-serif;
 }
 
 #navbar a{
@@ -99,27 +105,32 @@ and (orientation:portrait){
 
 #navbar{
     width: 100vw;
-    
 }    
 
 #navbar a{
-   font-size: 20px;
-   display: flex;
+    font-size: 15px;
+    display: flex;
+    margin-left: 70px;
+}
+
+#navbar img{
+    width: 10px; 
 }
 
 #projets{
     display: flex;
     width: 50px;
     flex-direction: column;
-    margin-left: 100px;  
+    margin-left: 25%;  
 }
 
 #projets p{
-    font-size: 10px;  
+    font-size: 10px;
+    margin-left: 20px;  
 }
 
 h2{
-    margin-left: -30px;
+    margin-left: 20px;
 }
 
 #landing-page{
@@ -129,14 +140,14 @@ h2{
 }
 
 #landing-page img{
-    width: 200px;
+    width: 100px;
     margin-top: 50px;
-    margin-left: 35px;
+    margin-left: -50px;
 }
 
 h1{
-    margin-left: 30px;
-    font-size: 30px;
+    margin-left: -30px;
+    font-size: 10px;
 }
 
 footer a{
