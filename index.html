@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New porfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javaScript" src="javascript.js"></script>
+    <!-- <script src="javascript.js"></script> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
@@ -15,49 +15,78 @@
     <img class="logo" src="web-programming.png">
     <nav id="navbar">
         <a href="#landing-page" class="item">A propos</a>
-        <a href="#projets" class="item">Mes projets</a>
+        <a href="#projets" class="item">Mes compétences</a>
         <a href="#adresse" class="item">Mes contacts</a>
      
     </nav>
-      <a href="#" class="toggle"><i id="icone" class="fas fa-bars" onclick="toggleMenu"></i></a> 
+      <a href="#" class="toggle"><i id="icone" onclick="change()" class="fas fa-bars"></i></a> 
 </header>
 
-    <main>
-        <section id="landing-page">
-            <h1>Je suis un developpeur HTML, CSS et je suis en apprentissage sur le langage PYTHON.</h1>
-            <img src="man.png">
+        <main>
+                <section id="landing-page">
+            <h1>Je suis un developpeur HTML, CSS, JAVASCRIPT et je suis en apprentissage sur le langage PYTHON.Et j'aimerai devenir un grand architecte et initier le codage à mes futurs métiers.</h1>
+    <img src="man.png">
         </section>
     
         <section>
-            <h2>Mes différents projets</h2>
+            <h2>Mes compétences</h2>
             <section id="projets">
             <a href="">
                 <img src="icone.png">
-                <p>Mon premier projet HTML, CSS</p> 
+                <p>Site web intéractif HTML, CSS et JAVASCRIPT</p> 
             </a>
 
             <a href="">
                 <img src="jeux.png">
-                <p>Mon premier jeux PYTHON</p>
+                <p>Jeux simples PYTHON</p>
             </a>
             
             <a href="">
-                <img src="chat.png">
-                <p>mon site de chat</p>
+                <img src="formulaire.png">
+                <p>Formulaire d'inscription</p>
             </a>
 
-            <a href="">
-                <img src="">
-                <p></p>
-            </a>
             </section>
         </section>
 
     </main>
+
         <footer id="adresse">
-            <a href="https://discord.com/channels/832981529730351154/835553846729768991" class="menu">Discord</a>
-            <a href="https://github.com/mathisehouabolet" class="menu">Github</a>
+            <a href="https://discord.com/channels/881564693091713064/881564693091713067" class="menu">Discord</a>
+            <a href="https://github.com/mathisehouabolet/mon-site-personnel" class="menu">Github</a>
         </footer>
 
 </body>
+
+<script>
+
+    // function change(){
+    // document.getElementById("navbar").classList.add("active");
+    // document.getElementById("icone").classList.remove("fa-bars");
+//     // document.getElementById("icone").classList.add("fa-times");
+
+//     // document.getElementById("navbar").classList.remove("active");
+//     // document.getElementById("icone").classList.remove("fa-times");
+//     // document.getElementById("icone").classList.add("fa-bars");
+// }
+
+
+function change(){
+    if (menu.classList.contains("active")){
+        
+        menu.classList.add("active");
+        icone.classList.remove("fa-bars");
+        icone.classList.add("fa-times");
+    
+    }else{
+        
+        menu.classList.remove("active");
+        icone.classList.remove("fa-times");
+        icone.classList.add("fa-bars");
+    } 
+}
+
+toggle.addEventListener("click", change, false);
+
+</script>
 </html>

@@ -3,7 +3,7 @@
 }
 
 header{
-  background-color: #00afff;     
+background-color: #00afff;     
 justify-content: flex-end;
 top: 0;
 position: fixed;
@@ -28,10 +28,15 @@ display: flex;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
     color: white;
-    /* display: flex; */
+    display: flex;
     margin-left: 50px;
     /* justify-content: flex-end; */
     font-size: 18px;
+    transition-duration: 0.4s;
+}
+
+#navbar a:hover{
+    color: cyan;
 }
 
 .logo{
@@ -44,7 +49,7 @@ display: flex;
 }
 
 h1{
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
     color: #00afff;
     margin-top: -80px;
@@ -57,6 +62,11 @@ a{
     font-size: 14px;
     z-index: -1; 
     color: inherit;
+    transition-duration: 0.4s;
+}
+
+a:hover{
+    color: cyan;
 }
 
 #landing-page{
@@ -118,40 +128,38 @@ and (orientation:portrait){
 
 #navbar{
 width: 100vw;
-position: absolute;
-top: 50px;
 left: -20px;
+position: absolute;
+top: 75px;
 Flex-direction: column;
+display: none;
+} 
 
-}    
+.item {
+display: none;
+text-align: center;
+padding: 10x;
+Background-color: #00afff;
+}
+
+.toggle{
+display: block;
+}
+
+i{
+font-size: 28px;
+margin-right: 20px;
+margin-top: 10px;
+}
 
  a{
     text-decoration: none;
     color: inherit;
 }
 
-.item{
-display:none;
-text-align: center;
-padding: 10px;
-background-color: #00afff;
-width: 100vw;
-}
-
-.toggle{
-    display: block;
-}
-
-i{
-    font-size: 28px;
-    margin-right: 20px;
-    margin-top: 13px;
-}
-
 .active .item {
-
-    display: block;
-    }
+display: block;
+}
 
 #projets{
     display: flex;
